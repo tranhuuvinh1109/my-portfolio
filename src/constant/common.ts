@@ -47,4 +47,12 @@ const USER_INFORMATION = {
   birthday: "11/09/2002",
 };
 
-export { CHAP, CONTACT, USER_INFORMATION };
+const EDUCATION = [
+  {
+    school: "Da Nang University of Science and Technology",
+    gpa: "3.1 / 4.0",
+    major: "Information Technology",
+    time: "Oct 2020 - Feb 2025",
+  },
+];
+export { CHAP, CONTACT, USER_INFORMATION, EDUCATION };

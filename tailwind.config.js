@@ -11,6 +11,7 @@ export default {
         overlay60: "rgba(0,0,0, 0.6)",
         borderPrimary: "#2C2B2C",
         highlight: "#EF4444",
+        title: "#343A40",
       },
       fontFamily: {
         montserrat: ["Montserrat Alternates", "sans-serif"],

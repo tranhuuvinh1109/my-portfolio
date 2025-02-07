@@ -4,7 +4,7 @@ import { LuDot } from "react-icons/lu";
 const About = () => {
   return (
     <div className="pt-4" id="about">
-      <h1 className=" text-6xl font-semibold">
+      <h1 className=" text-[80px] font-semibold">
         <span className=" text-highlight">Vinh</span> Tran Huu
       </h1>
       <h2 className="flex items-center gap-0.5">

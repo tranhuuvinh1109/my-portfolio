@@ -1,5 +1,6 @@
 import About from "../../components/About";
 import Divider from "../../components/Divider";
+import Education from "../../components/Education";
 import Sidebar from "../../components/Sidebar";
 
 const HomePage = () => {
@@ -11,6 +12,8 @@ const HomePage = () => {
       <div className="flex flex-1 flex-col bg-slate-500">
         <div className="flex-1 overflow-y-auto bg-white px-5">
           <About />
+          <Divider />
+          <Education />
           <Divider />
         </div>
       </div>

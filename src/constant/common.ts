@@ -13,6 +13,11 @@ import SvgNestJS from "../assets/svg-components/SvgNestJS";
 import SvgDjango from "../assets/svg-components/SvgDjango";
 import SvgWordpress from "../assets/svg-components/SvgWordpress";
 import SvgWebflow from "../assets/svg-components/SvgWebflow";
+import { ProjectItemType } from "../type/common";
+import { Position, ProjectType } from "../enum/common";
+import SvgFirebase from "../assets/svg-components/SvgFirebase";
+import SvgTailwindCSS from "../assets/svg-components/SvgTailwindCss";
+import VCareLogo from "../assets/images/VCare.png";
 const CHAP = [
   {
     label: "About",
@@ -125,4 +130,49 @@ const FRAMEWORKS = [
   },
 ];
 
-export { CHAP, CONTACT, USER_INFORMATION, EDUCATION, LANGUAGE_PROGRAMINGS, FRAMEWORKS };
+const PROJECTS: ProjectItemType[] = [
+  {
+    name: "V-Care",
+    description:
+      "This project is a web-based platform designed to assist users in identifying skin conditions and diseases using advanced AI technology. By leveraging a trained AI model, the system provides detailed insights and treatment recommendations to enhance user health and well-being.",
+    time: "June 2024",
+    numberOfMembers: 1,
+    logo: VCareLogo,
+    videoUrl: "https://www.youtube.com/embed/Ez1Kl3vqr4w?si=9yb2OfXkaRoGasIJ",
+    type: ProjectType.PRIVATE,
+    linkToProject: "https://vcare-seven.vercel.app/",
+    position: [Position.FE_DEVELOPER, Position.BE_DEVELOPER, Position.DEVOPS],
+    technologies: {
+      backend: [
+        {
+          name: "Django",
+          icon: SvgDjango,
+        },
+        {
+          name: "Firebase",
+          icon: SvgFirebase,
+        },
+        {
+          name: "YOLO V5",
+          icon: SvgFirebase,
+        },
+        {
+          name: "Chat GPT API",
+          icon: SvgFirebase,
+        },
+      ],
+      frontend: [
+        {
+          name: "ReactJS",
+          icon: SvgReact,
+        },
+        {
+          name: "TailwindCSS",
+          icon: SvgTailwindCSS,
+        },
+      ],
+    },
+  },
+];
+
+export { CHAP, CONTACT, USER_INFORMATION, EDUCATION, LANGUAGE_PROGRAMINGS, FRAMEWORKS, PROJECTS };

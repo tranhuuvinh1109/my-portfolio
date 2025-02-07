@@ -1,13 +1,14 @@
 import About from "../../components/About";
 import Divider from "../../components/Divider";
 import Education from "../../components/Education";
+import Projects from "../../components/Projects";
 import Sidebar from "../../components/Sidebar";
 import Skills from "../../components/Skills";
 
 const HomePage = () => {
   return (
     <div className="flex h-screen overflow-hidden">
-      <div className=" bg-highlight flex w-2/12 items-center justify-center">
+      <div className=" flex w-2/12 items-center justify-center bg-highlight">
         <Sidebar />
       </div>
       <div className="flex flex-1 flex-col bg-slate-500">
@@ -17,6 +18,8 @@ const HomePage = () => {
           <Education />
           <Divider />
           <Skills />
+          <Divider />
+          <Projects />
         </div>
       </div>
     </div>

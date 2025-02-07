@@ -17,7 +17,7 @@ const Skills = () => {
             );
           })}
         </ul>
-        <h1 className="mt-6 text-xl font-semibold">Frameworks</h1>
+        <h1 className="mt-10 text-xl font-semibold">Frameworks</h1>
         <ul className="mt-2 flex gap-6">
           {FRAMEWORKS.map((item) => {
             const Icon = item.icon;

@@ -2,6 +2,7 @@ import About from "../../components/About";
 import Divider from "../../components/Divider";
 import Education from "../../components/Education";
 import Sidebar from "../../components/Sidebar";
+import Skills from "../../components/Skills";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
           <Divider />
           <Education />
           <Divider />
+          <Skills />
         </div>
       </div>
     </div>

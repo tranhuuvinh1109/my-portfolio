@@ -1,7 +1,18 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-
+import SvgTypeScript from "../assets/svg-components/SvgTypeScript";
+import SvgJavaScript from "../assets/svg-components/SvgJavascript";
+import SvgHtml from "../assets/svg-components/SvgHtml";
+import SvgCSS from "../assets/svg-components/SvgCSS";
+import SvgPython from "../assets/svg-components/SvgPython";
+import SvgCPlusPlus from "../assets/svg-components/SvgCPlusPlus";
+import SvgReact from "../assets/svg-components/SvgReact";
+import SvgNextJS from "../assets/svg-components/SvgNextJS";
+import SvgNestJS from "../assets/svg-components/SvgNestJS";
+import SvgDjango from "../assets/svg-components/SvgDjango";
+import SvgWordpress from "../assets/svg-components/SvgWordpress";
+import SvgWebflow from "../assets/svg-components/SvgWebflow";
 const CHAP = [
   {
     label: "About",
@@ -55,4 +66,63 @@ const EDUCATION = [
     time: "Oct 2020 - Feb 2025",
   },
 ];
-export { CHAP, CONTACT, USER_INFORMATION, EDUCATION };
+
+const LANGUAGE_PROGRAMINGS = [
+  {
+    icon: SvgTypeScript,
+    label: "TypeScript",
+  },
+  {
+    icon: SvgJavaScript,
+    label: "JavaScript",
+  },
+  {
+    icon: SvgHtml,
+    label: "HTML",
+  },
+  {
+    icon: SvgCSS,
+    label: "CSS",
+  },
+  {
+    icon: SvgPython,
+    label: "Python",
+  },
+  {
+    icon: SvgCPlusPlus,
+    label: "C++",
+  },
+];
+
+const FRAMEWORKS = [
+  {
+    icon: SvgReact,
+    label: "ReactJS",
+  },
+  {
+    icon: SvgReact,
+    label: "React Native",
+  },
+  {
+    icon: SvgNextJS,
+    label: "NextJS",
+  },
+  {
+    icon: SvgNestJS,
+    label: "NestJS",
+  },
+  {
+    icon: SvgDjango,
+    label: "Django",
+  },
+  {
+    icon: SvgWordpress,
+    label: "Wordpress",
+  },
+  {
+    icon: SvgWebflow,
+    label: "Webflow",
+  },
+];
+
+export { CHAP, CONTACT, USER_INFORMATION, EDUCATION, LANGUAGE_PROGRAMINGS, FRAMEWORKS };

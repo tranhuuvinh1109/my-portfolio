@@ -3,6 +3,6 @@ type TitleSessionProps = {
   className?: string;
 };
 const TitleSession = ({ title, className }: TitleSessionProps) => {
-  return <h1 className={`text-title mb-10 text-4xl font-semibold uppercase ${className}`}>{title}</h1>;
+  return <h1 className={`mb-10 text-2xl font-semibold uppercase text-title md:text-4xl ${className}`}>{title}</h1>;
 };
 export default TitleSession;

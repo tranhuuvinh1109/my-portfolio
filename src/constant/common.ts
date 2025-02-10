@@ -18,6 +18,13 @@ import { Position, ProjectType } from "../enum/common";
 import SvgFirebase from "../assets/svg-components/SvgFirebase";
 import SvgTailwindCSS from "../assets/svg-components/SvgTailwindCss";
 import VCareLogo from "../assets/images/VCare.png";
+import ZaylyAILogo from "../assets/images/ZaylyAi.webp";
+import ZaylyAI1 from "../assets/images/zaylyAi (1).webp";
+import ZaylyAI2 from "../assets/images/ZayluAi2 (1).webp";
+import ZaylyAI3 from "../assets/images/ZayluAi3.webp";
+import ZaylyAI4 from "../assets/images/ZayluAi4.webp";
+import ZaylyAI5 from "../assets/images/ZayluAi5.webp";
+import ZaylyAI6 from "../assets/images/ZayluAi2.webp";
 const CHAP = [
   {
     label: "About",
@@ -172,6 +179,58 @@ const PROJECTS: ProjectItemType[] = [
         },
       ],
     },
+  },
+  {
+    name: "Zay AI",
+    description:
+      "ZaylyAI provides businesses with customized chatbots powered by OpenAI, tailored to each company's knowledge base, enhancing customer interactions and automating support.",
+    time: "June 2024",
+    numberOfMembers: 2,
+    logo: ZaylyAILogo,
+    type: ProjectType.PRIVATE,
+    position: [Position.FE_DEVELOPER],
+    technologies: {
+      backend: [
+        {
+          name: "Django",
+          icon: SvgDjango,
+        },
+        {
+          name: "Chat GPT API",
+          icon: SvgFirebase,
+        },
+      ],
+      frontend: [
+        {
+          name: "ReactJS",
+          icon: SvgReact,
+        },
+        {
+          name: "TailwindCSS",
+          icon: SvgTailwindCSS,
+        },
+      ],
+    },
+    imageUrl: [
+      {
+        link: ZaylyAI1,
+      },
+      {
+        link: ZaylyAI2,
+      },
+      {
+        link: ZaylyAI3,
+      },
+      {
+        link: ZaylyAI5,
+      },
+      {
+        link: ZaylyAI4,
+      },
+      {
+        link: ZaylyAI6,
+      },
+    ],
   },
 ];
 

@@ -7,18 +7,18 @@ const Skills = () => {
       <TitleSession title="Skills" />
       <div>
         <h1 className="text-xl font-semibold">Programming Languages</h1>
-        <ul className="mt-2 flex gap-6">
+        <ul className="mt-2 grid grid-cols-3 gap-6 md:flex">
           {LANGUAGE_PROGRAMINGS.map((item) => {
             const Icon = item.icon;
             return (
-              <li key={item.label}>
+              <li key={item.label} className="mx-auto">
                 <Icon width={52} height={52} />
               </li>
             );
           })}
         </ul>
         <h1 className="mt-10 text-xl font-semibold">Frameworks</h1>
-        <ul className="mt-2 flex gap-6">
+        <ul className="mt-2 grid grid-cols-2 gap-6 md:flex">
           {FRAMEWORKS.map((item) => {
             const Icon = item.icon;
             return (

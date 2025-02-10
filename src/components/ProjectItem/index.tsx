@@ -12,7 +12,7 @@ const ProjectItem = ({ projectData, onClickReadMore }: ProjectItemProps) => {
     <div className="flex flex-col gap-4 rounded-lg border p-5">
       <div>
         <h1 className="text-center text-2xl font-semibold text-black">{projectData.name}</h1>
-        <img src={projectData.logo} alt="Logo" className="mx-auto" />
+        <img src={projectData.logo} alt="Logo" className="mx-auto max-h-12" />
       </div>
       <div>
         <h4 className="font-semibold">Descriptions:</h4>

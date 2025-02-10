@@ -20,7 +20,7 @@ const Projects = () => {
     <>
       <div>
         <TitleSession title="Projects" />
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {PROJECTS.map((item, index) => {
             return (
               <ProjectItem key={index} projectData={item} onClickReadMore={() => handleClickReadMoreProject(item)} />
@@ -31,7 +31,7 @@ const Projects = () => {
       {projectSelected && (
         <ModalReadMoreProject
           projectData={projectSelected}
-          title="V-Care"
+          title={projectSelected.name}
           open={!!projectSelected}
           onCancel={hanldeCloseModal}
         />

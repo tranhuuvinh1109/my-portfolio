@@ -63,6 +63,64 @@ const CONTACT = [
   },
 ];
 
+const EXPERIENCE = [
+  {
+    title: "Staff",
+    position: "Frontend Developer",
+    company: "NCC Asia",
+    time: "Jan 2024 - Present",
+    projects: [
+      {
+        name: "Project 1",
+        descriptions: [
+          "A mobile app that functions as a crypto wallet, allowing users to make transactions andexchange crypto currencies. It also supports multiple networks for development environments or the mainnet",
+          "Develop a website to market the coin, allowing users to track its price, stay updated on events from the organization, and more.",
+        ],
+      },
+    ],
+    responsibilities: ["Implement the client's requirements and develop for both Android and iOS platforms."],
+    programmingLanguages: [
+      {
+        icon: SvgTypeScript,
+        label: "TypeScript",
+      },
+      {
+        icon: SvgReact,
+        label: "React Native",
+      },
+      {
+        icon: SvgNextJS,
+        label: "NextJS",
+      },
+      {
+        icon: SvgWebflow,
+        label: "Webflow",
+      },
+    ],
+  },
+  {
+    title: "Intern",
+    position: "Intern Frontend",
+    company: " Sun Asterisk",
+    time: "Jun 2022 - Sep 2022",
+    projects: [],
+    responsibilities: [
+      "Created a project description specification for building the website. It was built to manage student’study processes and includes features such as creating study plans, allowing teachers to assign practice exercises to students, and more",
+      "Create coding frames and design database based on project descriptions",
+    ],
+    programmingLanguages: [
+      {
+        icon: SvgJavaScript,
+        label: "JavaScript",
+      },
+      {
+        icon: SvgReact,
+        label: "ReactJS",
+      },
+    ],
+  },
+];
+
 const USER_INFORMATION = {
   email: "vinhhuutran.developer@gmail.com",
   phone: "(+84) 915 905 138",
@@ -234,4 +292,4 @@ const PROJECTS: ProjectItemType[] = [
   },
 ];
 
-export { CHAP, CONTACT, USER_INFORMATION, EDUCATION, LANGUAGE_PROGRAMINGS, FRAMEWORKS, PROJECTS };
+export { CHAP, CONTACT, USER_INFORMATION, EDUCATION, LANGUAGE_PROGRAMINGS, FRAMEWORKS, PROJECTS, EXPERIENCE };

@@ -4,7 +4,7 @@ import { LuDot } from "react-icons/lu";
 
 const Education = () => {
   return (
-    <div id="education">
+    <section id="education">
       <TitleSession title="Education" />
       <div>
         {EDUCATION.map((item, index) => {
@@ -30,7 +30,7 @@ const Education = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 export default Education;

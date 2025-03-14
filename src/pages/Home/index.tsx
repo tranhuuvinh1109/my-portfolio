@@ -6,6 +6,7 @@ import Education from "../../components/Education";
 import Projects from "../../components/Projects";
 import Sidebar from "../../components/Sidebar";
 import Skills from "../../components/Skills";
+import Experience from "../../components/Experience";
 
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="md:flex md:h-screen md:overflow-hidden">
+    <div className="pb-10 md:flex md:h-screen md:overflow-hidden">
       <div className="hidden items-center justify-center bg-highlight md:flex md:w-2/12">
         <Sidebar />
       </div>
@@ -25,6 +26,8 @@ const HomePage = () => {
         <div className=" flex md:flex-1 md:overflow-y-auto">
           <div className=" px-5">
             <About onClickBtnMyCV={handleOpen} />
+            <Divider />
+            <Experience />
             <Divider />
             <Education />
             <Divider />

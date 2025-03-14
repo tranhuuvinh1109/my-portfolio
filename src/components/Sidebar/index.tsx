@@ -18,7 +18,7 @@ const Sidebar = ({ active }: { active: string }) => {
                 onClick={() => {
                   document.getElementById(item.href)?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className={`relative flex items-center gap-2 font-semibold uppercase text-white ${active === item.href ? " italic" : ""}`}
+                className={`relative flex items-center gap-2 font-semibold uppercase text-white ${active === item.href ? " italic" : ""} hover:cursor-pointer`}
               >
                 {active === item.href && (
                   <div className=" absolute left-[-20px]">

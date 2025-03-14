@@ -14,8 +14,8 @@ const Sidebar = () => {
             return (
               <li
                 key={index}
-                onClick={(e) => {
-                  e.preventDefault();
+                onClick={() => {
+                  console.log(item.href);
                   document.getElementById(item.href)?.scrollIntoView({ behavior: "smooth" });
                 }}
                 className=" font-semibold uppercase text-white"

@@ -1,7 +1,11 @@
 import { CONTACT, USER_INFORMATION } from "../../constant/common";
 import { LuDot } from "react-icons/lu";
+import { PiReadCvLogoBold } from "react-icons/pi";
 
-const About = () => {
+type AboutProps = {
+  onClickBtnMyCV: () => void;
+};
+const About = ({ onClickBtnMyCV }: AboutProps) => {
   return (
     <div className="pt-4" id="about">
       <h1 className="text-5xl font-semibold md:text-[80px]">
@@ -63,6 +67,15 @@ const About = () => {
           );
         })}
       </ul>
+      <div className="my-8">
+        <button
+          className="flex items-center gap-4 rounded-xl  border px-8 py-2 text-xl hover:border-highlight hover:text-highlight"
+          title="View My CV"
+          onClick={onClickBtnMyCV}
+        >
+          <PiReadCvLogoBold fontSize={40} /> My CV
+        </button>
+      </div>
       <h5 className="mt-4">
         I’m a frontend developer with over one year of experience in JavaScript technologies. I usually use TypeScript
         to develop applications.

@@ -3,7 +3,7 @@ import TitleSession from "../TitleSession";
 
 const Skills = () => {
   return (
-    <div>
+    <div id="skills">
       <TitleSession title="Skills" />
       <div>
         <h1 className="text-xl font-semibold">Programming Languages</h1>

@@ -18,11 +18,11 @@ const Sidebar = ({ active }: { active: string }) => {
                 onClick={() => {
                   document.getElementById(item.href)?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className={`relative flex items-center gap-2 font-semibold uppercase text-white ${active === item.href ? " decoration-slice underline" : ""}`}
+                className={`relative flex items-center gap-2 font-semibold uppercase text-white ${active === item.href ? " italic" : ""}`}
               >
                 {active === item.href && (
                   <div className=" absolute left-[-20px]">
-                    <FaRegHandPointRight />
+                    <FaRegHandPointRight fontSize={16} />
                   </div>
                 )}
                 {item.label}

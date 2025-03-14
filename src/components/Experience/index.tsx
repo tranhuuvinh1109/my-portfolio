@@ -1,9 +1,11 @@
 import { LuDot } from "react-icons/lu";
 import { EXPERIENCE } from "../../constant/common";
+import TitleSession from "../TitleSession";
 
 const Experience = () => {
   return (
-    <div id="experience">
+    <section id="experience">
+      <TitleSession title="Experience" />
       <div className="flex flex-col gap-8">
         {EXPERIENCE.map((item, index) => {
           return (
@@ -71,7 +73,7 @@ const Experience = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

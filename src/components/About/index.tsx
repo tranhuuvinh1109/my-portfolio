@@ -1,13 +1,14 @@
 import { CONTACT, USER_INFORMATION } from "../../constant/common";
 import { LuDot } from "react-icons/lu";
 import { PiReadCvLogoBold } from "react-icons/pi";
+import TypingEffect from "../TypingEffect";
 
 type AboutProps = {
   onClickBtnMyCV: () => void;
 };
 const About = ({ onClickBtnMyCV }: AboutProps) => {
   return (
-    <div className="pt-4" id="about">
+    <section className="pt-4" id="about">
       <h1 className="text-5xl font-semibold md:text-[80px]">
         <span className=" text-highlight">Vinh</span> Tran Huu
       </h1>
@@ -50,6 +51,9 @@ const About = ({ onClickBtnMyCV }: AboutProps) => {
           </h2>
         </div>
       </div>
+      <div>
+        <TypingEffect />
+      </div>
       <ul className="mt-4 flex justify-center gap-4 md:justify-start">
         {CONTACT.map((item, index) => {
           const Icon = item.icon;
@@ -84,7 +88,7 @@ const About = ({ onClickBtnMyCV }: AboutProps) => {
         I have researched several AI models (such as YOLO, EasyOCR, and OpenAI) and applied them in my personal
         projects. I have also guided some students in developing products that are useful to society
       </h5>
-    </div>
+    </section>
   );
 };
 

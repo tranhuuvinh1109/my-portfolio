@@ -17,7 +17,7 @@ const Projects = () => {
 
   return (
     <>
-      <div id="projects">
+      <section id="projects">
         <TitleSession title="Projects" />
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {PROJECTS.map((item, index) => {
@@ -26,7 +26,7 @@ const Projects = () => {
             );
           })}
         </div>
-      </div>
+      </section>
       {projectSelected && (
         <ModalReadMoreProject
           projectData={projectSelected}

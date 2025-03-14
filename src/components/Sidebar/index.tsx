@@ -1,6 +1,7 @@
 import { CHAP } from "../../constant/common";
+import { FaRegHandPointRight } from "react-icons/fa";
 
-const Sidebar = () => {
+const Sidebar = ({ active }: { active: string }) => {
   return (
     <div className="flex flex-col items-center gap-4">
       <img
@@ -15,11 +16,15 @@ const Sidebar = () => {
               <li
                 key={index}
                 onClick={() => {
-                  console.log(item.href);
                   document.getElementById(item.href)?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className=" font-semibold uppercase text-white"
+                className={`relative flex items-center gap-2 font-semibold uppercase text-white ${active === item.href ? " decoration-slice underline" : ""}`}
               >
+                {active === item.href && (
+                  <div className=" absolute left-[-20px]">
+                    <FaRegHandPointRight />
+                  </div>
+                )}
                 {item.label}
               </li>
             );

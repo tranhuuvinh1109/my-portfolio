@@ -27,6 +27,7 @@
     "react-select": "^5.8.0",
     "react-type-animation": "^3.2.0",
     "swiper": "^11.1.14",
+    "typed.js": "^2.1.0",
     "zustand": "^4.5.2"
   },
   "devDependencies": {

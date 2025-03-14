@@ -6,7 +6,6 @@ import { ProjectItemType } from "../../type/common";
 import ModalReadMoreProject from "../ModalReadMoreProject";
 
 const Projects = () => {
-  // const [isModalOpen, setIsModalOpen] = useState(true);
   const [projectSelected, setProjectSelected] = useState<ProjectItemType>();
   const handleClickReadMoreProject = useCallback((item: ProjectItemType) => {
     setProjectSelected(item);
@@ -18,7 +17,7 @@ const Projects = () => {
 
   return (
     <>
-      <div>
+      <div id="projects">
         <TitleSession title="Projects" />
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {PROJECTS.map((item, index) => {

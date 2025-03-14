@@ -4,7 +4,7 @@ import { LuDot } from "react-icons/lu";
 
 const Education = () => {
   return (
-    <div>
+    <div id="education">
       <TitleSession title="Education" />
       <div>
         {EDUCATION.map((item, index) => {
@@ -12,7 +12,7 @@ const Education = () => {
             <div key={index}>
               <div className="flex items-center justify-between">
                 <h1 className="text-xl font-semibold uppercase">{item.school}</h1>
-                <h2 className="text-highlight font-semibold">{item.time}</h2>
+                <h2 className="font-semibold text-highlight">{item.time}</h2>
               </div>
               <div className="mt-2">
                 <h2 className="flex items-center gap-2">

@@ -43,8 +43,8 @@ const CHAP = [
     href: "skills",
   },
   {
-    label: "Interests",
-    href: "interests",
+    label: "Projects",
+    href: "projects",
   },
 ];
 

@@ -7,7 +7,7 @@ type DrawerCVContentProps = {
 
 const DrawerCVContent = ({ onClose, open }: DrawerCVContentProps) => {
   return (
-    <Drawer title="Vinh Tran Huu" onClose={onClose} open={open} size="large">
+    <Drawer title="My CV" onClose={onClose} open={open} size="large">
       <iframe src={CV} title="External Website" width="100%" height="100%" style={{ border: "none" }} />
     </Drawer>
   );

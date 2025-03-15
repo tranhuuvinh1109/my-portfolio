@@ -7,6 +7,7 @@ import Projects from "../../components/Projects";
 import Sidebar from "../../components/Sidebar";
 import Skills from "../../components/Skills";
 import Experience from "../../components/Experience";
+import MenuMobile from "../../components/MenuMobile";
 
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,6 +43,10 @@ const HomePage = () => {
       <div className="hidden items-center justify-center bg-highlight md:flex md:w-2/12">
         <Sidebar active={active} />
       </div>
+      <div className="block md:hidden">
+        <MenuMobile active={active} setActive={setActive} />
+      </div>
+
       <div className="bg-white md:flex md:flex-1 md:flex-col">
         <div className=" flex md:flex-1 md:overflow-y-auto" id="home-content">
           <div className=" px-5  ">

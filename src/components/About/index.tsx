@@ -8,7 +8,7 @@ type AboutProps = {
 };
 const About = ({ onClickBtnMyCV }: AboutProps) => {
   return (
-    <section className="pt-4" id="about">
+    <section className="pt-24 md:pt-4" id="about">
       <h1 className="text-5xl font-semibold md:text-[80px]">
         <span className=" text-highlight">Vinh</span> Tran Huu
       </h1>
